@@ -10,7 +10,6 @@ void print_python_list_info(PyObject *p)
 
 	printf("[*] Size of the Python List = %li\n", measure)
 	printf("[*] Allocated = %li\n", objct->allocated);
-	for (x = 0; x< measure; x++)
-	{
+	for (x = 0; x < measure; x++)
 		printf("Element %x: %s\n", x, PY_TYPE(objct->ob_item[x])->tp_name);
-	}
+}
